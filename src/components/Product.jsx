@@ -16,10 +16,6 @@ const Info = styled.div`
     cursor: pointer;
     z-index: 3;
     transition: all 0.8s ease;
-    &:hover{
-        opacity: 1;
-    }
-
 `
 const Container = styled.div`
     flex: 1;
@@ -31,9 +27,8 @@ const Container = styled.div`
     justify-content: center;
     background-color: #f5fbfb;
     position: relative;
-    &:hover${Info}{
-        background-color: #e9e8e8;
-        transform: scale(1.1);
+    &:hover ${Info}{
+        opacity: 1;
     }
 `
 const Circle = styled.div`
@@ -58,6 +53,10 @@ const Icon = styled.div`
     justify-content: center;
     margin: 10px;
     transition: all 0.5s ease;
+    &:hover {
+        background-color: #e9f5f5;
+        transform: scale(1.1);
+    }
 `
 const Product = ({item}) => {
   return (
